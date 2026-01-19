@@ -1,8 +1,8 @@
 {
 	"meta": {
-		"title": "YYsuni",
-		"description": "YYsuni 的个人博客，记录前端开发、探索、笔记。前端 UI 更新代码仓库。",
-		"username": "Suni"
+		"title": "Eden Silas",
+		"description": "Eden Silas 的个人博客，记录前端开发探索和个人日常生活。",
+		"username": "Eden"
 	},
 	"theme": {
 		"colorBrand": "#de4331",
@@ -30,35 +30,43 @@
 		{
 			"id": "a46372ff45bc5524",
 			"url": "/images/art/a46372ff45bc5524.jpg"
+		},
+		{
+			"id": "e00f1b0a3fc0b8bb",
+			"url": "/images/art/e00f1b0a3fc0b8bb.png"
 		}
 	],
-	"currentArtImageId": "a46372ff45bc5524",
+	"currentArtImageId": "e00f1b0a3fc0b8bb",
 	"backgroundImages": [
 		{
 			"id": "",
 			"url": ""
+		},
+		{
+			"id": "14972161b92001dd",
+			"url": "/images/background/14972161b92001dd.png"
 		}
 	],
-	"currentBackgroundImageId": "",
+	"currentBackgroundImageId": "14972161b92001dd",
 	"socialButtons": [
 		{
 			"id": "github",
-			"type": "github",
+			"type": "bilibili",
 			"value": "https://github.com/yysuni",
 			"label": "Github",
 			"order": 3
 		},
 		{
 			"id": "juejin",
-			"type": "juejin",
-			"value": "https://juejin.cn/user/2427311675422382",
-			"label": "稀土掘金",
+			"type": "github",
+			"value": "https://github.com/Muchili-code/muchili-code.github.io",
+			"label": "Github",
 			"order": 2
 		},
 		{
 			"id": "email",
 			"type": "email",
-			"value": "yysuni1001@gmail.com",
+			"value": "2979568058@qq.com",
 			"label": "",
 			"order": 1
 		}
