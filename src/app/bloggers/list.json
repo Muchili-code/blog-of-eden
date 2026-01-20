@@ -5,5 +5,12 @@
 		"url": "https://www.cnblogs.com/Muchilli",
 		"description": "我的博客园小站。\n曲水流觞，静断人空",
 		"stars": 5
+	},
+	{
+		"name": "yysuni",
+		"avatar": "https://www.yysuni.com/images/avatar.png",
+		"url": "https://www.yysuni.com/",
+		"description": "模板网站，yyds",
+		"stars": 5
 	}
 ]
