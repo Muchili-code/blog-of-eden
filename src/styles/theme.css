@@ -12,4 +12,14 @@
 	--font-sans:
 		'PingFang SC', -apple-system, system-ui, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, BlinkMacSystemFont, 'Helvetica Neue',
 		'Hiragino Sans GB', 'Microsoft YaHei', Arial;
+	
+	/* --- 警示框语义色 --- */
+	/* Note: 蓝色系，清晰冷静 */
+	--color-note: #0969da;
+	/* Tip: 青绿色系，与 brand 呼应 */
+	--color-tip: #10b981;
+	/* Warning: 暖橙色 */
+	--color-warning: #d29922;
+	/* Danger: 红色 */
+	--color-danger: #cf222e;
 }

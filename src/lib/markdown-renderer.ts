@@ -16,6 +16,24 @@ export function slugify(text: string): string {
 		.replace(/\s+/g, '-')
 }
 
+// --- SVG 图标定义 (内嵌字符串) ---
+const CALLOUT_ICONS: Record<string, string> = {
+	note: '<svg viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>',
+	tip: '<svg viewBox="0 0 16 16"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>',
+	warning: '<svg viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>',
+	danger: '<svg viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.657 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.75.75 0 0 0-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 1 0 1.06 1.06L8 9.06l1.97 1.97a.75.75 0 1 0 1.06-1.06L9.06 8l1.97-1.97a.75.75 0 1 0-1.06-1.06L8 6.94 6.03 4.97Z"></path></svg>',
+	fold: '<svg viewBox="0 0 16 16"><path d="M12.78 5.22a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L3.22 6.28a.75.75 0 0 1 1.06-1.06L8 8.94l3.72-3.72a.75.75 0 0 1 1.06 0Z"></path></svg>'
+}
+
+function getIcon(type: string): string {
+	const key = type.toLowerCase()
+	if (['note', 'info', 'todo'].includes(key)) return CALLOUT_ICONS.note
+	if (['tip', 'hint', 'success', 'check', 'done'].includes(key)) return CALLOUT_ICONS.tip
+	if (['warning', 'attention', 'caution'].includes(key)) return CALLOUT_ICONS.warning
+	if (['danger', 'error', 'bug', 'fail', 'missing'].includes(key)) return CALLOUT_ICONS.danger
+	return CALLOUT_ICONS.note
+}
+
 // Lazy load shiki to handle environments where it's not available (e.g., Cloudflare Workers)
 let shikiModule: typeof import('shiki') | null = null
 let shikiLoadAttempted = false
@@ -145,6 +163,48 @@ export async function renderMarkdown(markdown: string): Promise<MarkdownRenderRe
 		}
 
 		return `<li>${inner}</li>\n`
+	}
+
+	// --- Blockquote 渲染 (支持 Callout) ---
+	renderer.blockquote = (token: Tokens.Blockquote) => {
+		const content = marked.parser(token.tokens)
+		
+		// 检查是否符合 > [!type] 语法
+		const match = content.match(/^<p>\[!([a-zA-Z]+)\]([+-]?)(?:&nbsp;| )?(.*?)<\/p>/)
+
+		if (!match) {
+			return `<blockquote>${content}</blockquote>`
+		}
+
+		const type = match[1].toLowerCase()
+		const fold = match[2]
+		const title = match[3] || type.toUpperCase()
+		const body = content.replace(match[0], '') // 移除第一行标记
+
+		const titleHtml = `
+			<div class="callout-title">
+				<span class="callout-icon">${getIcon(type)}</span>
+				<span>${title}</span>
+				${fold ? `<span class="callout-fold">${CALLOUT_ICONS.fold}</span>` : ''}
+			</div>
+		`
+
+		if (fold) {
+			const openAttr = fold === '+' ? 'open' : ''
+			return `
+				<details class="callout" data-type="${type}" ${openAttr}>
+					<summary>${titleHtml}</summary>
+					<div class="callout-content">${body}</div>
+				</details>
+			`
+		} else {
+			return `
+				<div class="callout" data-type="${type}">
+					${titleHtml}
+					<div class="callout-content">${body}</div>
+				</div>
+			`
+		}
 	}
 
 	const katex = await loadKatex()

@@ -228,3 +228,72 @@
 	border: 1px solid rgba(0, 0, 0, 0.08);
 	border-radius: 8px;
 }
+
+/* --- Callout (警示框) 样式 --- */
+.prose .callout {
+	margin: 1.5em 0;
+	padding: 1em;
+	border-radius: 8px;
+	border-left: 4px solid var(--callout-color);
+	background-color: color-mix(in srgb, var(--callout-color), transparent 90%);
+	font-size: 0.95em;
+	page-break-inside: avoid;
+}
+
+/* 默认类型颜色 (fallback) */
+.prose .callout { --callout-color: var(--color-secondary); }
+.prose .callout[data-type="note"] { --callout-color: var(--color-note); }
+.prose .callout[data-type="tip"] { --callout-color: var(--color-tip); }
+.prose .callout[data-type="important"],
+.prose .callout[data-type="warning"] { --callout-color: var(--color-warning); }
+.prose .callout[data-type="caution"],
+.prose .callout[data-type="danger"] { --callout-color: var(--color-danger); }
+
+/* 标题区域 */
+.prose .callout-title {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	font-weight: 600;
+	color: var(--callout-color);
+	margin-bottom: 0.5em;
+	line-height: 1.2;
+}
+
+/* 如果内容为空，移除标题下方的间距 (针对仅有标题的情况) */
+.prose .callout-title:only-child {
+	margin-bottom: 0;
+}
+
+/* 图标 SVG 样式 */
+.prose .callout-icon svg {
+	width: 18px;
+	height: 18px;
+	fill: currentColor;
+}
+
+/* 折叠箭头 (仅针对可折叠类型) */
+.prose details.callout > summary {
+	list-style: none;
+	cursor: pointer;
+}
+.prose details.callout > summary::-webkit-details-marker {
+	display: none;
+}
+.prose details.callout > summary .callout-fold {
+	margin-left: auto;
+	transition: transform 0.2s;
+	opacity: 0.5;
+}
+.prose details.callout[open] > summary .callout-fold {
+	transform: rotate(90deg);
+}
+
+/* 修正警示框内部段落的边距，使其更紧凑 */
+.prose .callout p:first-of-type {
+	margin-top: 0;
+}
+.prose .callout p:last-of-type {
+	margin-bottom: 0;
+}
+/* --- Callout 样式结束 --- */
