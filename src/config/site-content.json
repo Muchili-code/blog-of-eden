@@ -5,22 +5,20 @@
 		"username": "Eden"
 	},
 	"theme": {
-		"colorBrand": "#de4331",
-		"colorPrimary": "#4E3F42",
+		"colorBrand": "#35bfab",
+		"colorPrimary": "#334f52",
 		"colorSecondary": "#7b888e",
-		"colorBrandSecondary": "#FCC841",
+		"colorBrandSecondary": "#1fc9e7",
 		"colorBg": "#eeeeee",
 		"colorBorder": "#ffffff",
 		"colorCard": "#ffffff66",
 		"colorArticle": "#ffffffcc"
 	},
 	"backgroundColors": [
-		"#FCC841",
-		"#DFEFFC",
-		"#DEDE92",
-		"#DE4331",
-		"#FE9750",
-		"#FCC841"
+		"#9EE7D1",
+		"#84D68A",
+		"#88E6E5",
+		"#a7f3d0"
 	],
 	"artImages": [
 		{
@@ -44,7 +42,7 @@
 			"url": "/images/art/a6614d5637613d60.png"
 		}
 	],
-	"currentArtImageId": "a6614d5637613d60",
+	"currentArtImageId": "e00f1b0a3fc0b8bb",
 	"backgroundImages": [
 		{
 			"id": "",
