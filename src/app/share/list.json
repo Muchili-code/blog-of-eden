@@ -72,56 +72,6 @@
 		"stars": 3
 	},
 	{
-		"name": "Igloo Inc.",
-		"logo": "https://www.igloo.inc/assets/favicon32-af94112f.png",
-		"url": "https://www.igloo.inc/",
-		"description": "abeto 作品，非常酷炫",
-		"tags": [
-			"3D"
-		],
-		"stars": 4
-	},
-	{
-		"name": "abeto 官网",
-		"logo": "https://abeto.co/assets/favicon32-11fb90a3.png",
-		"url": "https://abeto.co/",
-		"description": "无限绽开的花，飘荡的树叶，复古风格化",
-		"tags": [
-			"3D"
-		],
-		"stars": 4
-	},
-	{
-		"name": "Messenger",
-		"logo": "https://messenger.abeto.co/assets/favicon32-BC0QIL61.png",
-		"url": "https://messenger.abeto.co/",
-		"description": "abeto 作品，卡通送信员在地球小镇上奔跑，联机在线，可换装",
-		"tags": [
-			"3D"
-		],
-		"stars": 4
-	},
-	{
-		"name": "Summer Afternoon",
-		"logo": "https://summer-afternoon.vlucendo.com/assets/favicon32-e817b074.png",
-		"url": "https://summer-afternoon.vlucendo.com/",
-		"description": "夏日午后，小男孩在乡村公路上上游玩",
-		"tags": [
-			"3D"
-		],
-		"stars": 4
-	},
-	{
-		"name": "The Monolith Project",
-		"logo": "https://themonolithproject.net/assets/images-next/nose_logo.webp",
-		"url": "https://themonolithproject.net/",
-		"description": "奇幻宇宙的动画演绎，像看电影一样。“跨越多星之际，一座沉默的巨石碑悄然苏醒。“巨石碑计划”：每一次触碰，皆可重写现实。”",
-		"tags": [
-			"3D"
-		],
-		"stars": 5
-	},
-	{
 		"name": "Making Software",
 		"logo": "https://www.makingsoftware.com/favicon.ico",
 		"url": "https://www.makingsoftware.com/",
@@ -130,36 +80,6 @@
 			"学习"
 		],
 		"stars": 4
-	},
-	{
-		"name": "Ease 函数参考",
-		"logo": "https://easings.net/96.8aa68ac4.png",
-		"url": "https://easings.net/",
-		"description": "当你在调整动画节奏时，这个 ease 表能帮助直观感受 ease 表现出的效果",
-		"tags": [
-			"Github"
-		],
-		"stars": 3
-	},
-	{
-		"name": "Isocons",
-		"logo": "/images/share/97859f1c57799dd2.png",
-		"url": "https://www.isocons.app/",
-		"description": "3D icons 网站，酷酷的，免费。",
-		"tags": [
-			"Icons"
-		],
-		"stars": 3
-	},
-	{
-		"name": "Webp 转换压缩",
-		"logo": "https://www.yysuni.com/images/avatar.png",
-		"url": "https://www.yysuni.com/image-toolbox",
-		"description": "无限压缩，快且方便，可以直接对比效果",
-		"tags": [
-			"图片"
-		],
-		"stars": 3
 	},
 	{
 		"name": "Vercel",
