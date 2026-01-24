@@ -1,5 +1,18 @@
 [
   {
+    "slug": "civil-servant-exam",
+    "title": "公务员及其考试",
+    "tags": [
+      "公务员",
+      "选调"
+    ],
+    "date": "2026-01-24T16:03",
+    "summary": "讲解公务员考试以及其他相关信息",
+    "cover": "/blogs/civil-servant-exam/db2ef6d19f760845.png",
+    "hidden": true,
+    "category": ""
+  },
+  {
     "slug": "civil-servant",
     "title": "考公科普",
     "tags": [
