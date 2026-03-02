@@ -1,93 +1,21 @@
 [
 	{
-		"name": "Neumorphism",
-		"url": "https://neumorphism.io/",
-		"logo": "https://neumorphism.io/apple-touch-icon.png",
-		"description": "Neumorphism 是一种极具鲜明特色的设计风格，总能给新人一种惊叹感。但是应用并不广泛，实际开发也会有很多不好的点。更多是做一个留念。",
-		"tags": [
-			"CSS",
-			"Github"
-		],
-		"stars": 2
-	},
-	{
-		"name": "Uiverse",
-		"url": "https://uiverse.io/",
-		"logo": "/images/share/5e7b29cb1a84be80.png",
-		"description": "不可错过的参考库，有很多交互效果，包括热门的 Button、Loader 设计，内容丰富，还在不断更新。",
-		"tags": [
-			"CSS"
-		],
-		"stars": 4
-	},
-	{
-		"name": "Magic UI",
-		"url": "https://magicui.design/",
-		"logo": "https://magicui.design/favicon.ico",
-		"description": "shadcn/ui 伴生库，有很多实用设计。取用也很方便，可以自己复制独立的代码。",
-		"tags": [
-			"组件",
-			"Github"
-		],
-		"stars": 4
-	},
-	{
-		"name": "Ai lman",
-		"url": "https://aliimam.in/docs/backgrounds/shader-rgb",
-		"logo": "https://aliimam.in/_next/image?url=%2Fai-logo-black.png&w=128&q=75",
-		"description": "类 Magic UI，但是感觉差点意思。可作为看完 Magic 意犹未尽时闲看。",
-		"tags": [
-			"组件"
-		],
-		"stars": 3
-	},
-	{
-		"name": "Awwwards",
-		"url": "https://www.awwwards.com/",
-		"logo": "https://assets.awwwards.com/assets/images/favicon.svg",
-		"description": "网站评选网站，你总能从这里发现惊艳的网站",
-		"tags": [
-			"网站集"
-		],
-		"stars": 3
-	},
-	{
-		"name": "CSS Design Awards",
-		"url": "https://www.cssdesignawards.com/",
-		"logo": "/images/share/aaae2bf4f74c8eb1.svg",
-		"description": "网站评选网站，跟 Awwwards 类似，可以看到每期的优秀网站。观感上会好些。",
-		"tags": [
-			"网站集"
-		],
-		"stars": 3
-	},
-	{
-		"name": "404s.design",
-		"logo": "/images/share/5c9a8b7deb717c5f.svg",
-		"url": "https://www.404s.design/",
-		"description": "收集 404 设计的网站，无聊的时候可以看下。",
-		"tags": [
-			"网站集"
-		],
-		"stars": 3
-	},
-	{
-		"name": "Making Software",
-		"logo": "https://www.makingsoftware.com/favicon.ico",
-		"url": "https://www.makingsoftware.com/",
-		"description": "面向软件设计和开发人员的参考手册。样式很棒的学习网站。",
-		"tags": [
-			"学习"
-		],
-		"stars": 4
-	},
-	{
 		"name": "Vercel",
 		"logo": "https://vercel.com/favicon.ico",
 		"url": "https://vercel.com/muchillis-projects",
 		"description": "网站搭建的部署平台，也是本网站的部署平台",
 		"tags": [
 			"工具"
+		],
+		"stars": 5
+	},
+	{
+		"name": "YouTube",
+		"logo": "https://www.youtube.com/favicon.ico",
+		"url": "https://www.youtube.com/",
+		"description": "YouTube 是国外一个全球性的长视频网站，其在外国的地位相当于B站在国内的地位",
+		"tags": [
+			"视频"
 		],
 		"stars": 5
 	}
