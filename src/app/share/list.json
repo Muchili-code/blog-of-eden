@@ -21,11 +21,21 @@
 	},
 	{
 		"name": " AITokenCredit",
-		"logo": "https://join.aitoken.credit/logo.png",
+		"logo": "https://join.aitoken.credit/assets/atc-logo.svg",
 		"url": "https://join.aitoken.credit/",
 		"description": "帮助你开一间自己的 AI  服务小店",
 		"tags": [
 			"AI 资源，AI 服务"
+		],
+		"stars": 5
+	},
+	{
+		"name": "X",
+		"logo": "https://x.com/fivicon.ico",
+		"url": "https://x.com/",
+		"description": "X，即以前的推特（Twitter），被收购后改名为 X",
+		"tags": [
+			"工具"
 		],
 		"stars": 5
 	}
