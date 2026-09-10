@@ -18,5 +18,15 @@
 			"视频"
 		],
 		"stars": 5
+	},
+	{
+		"name": " AITokenCredit",
+		"logo": "https://join.aitoken.credit/logo.png",
+		"url": "https://join.aitoken.credit/",
+		"description": "帮助你开一间自己的 AI  服务小店",
+		"tags": [
+			"AI 资源，AI 服务"
+		],
+		"stars": 5
 	}
 ]
