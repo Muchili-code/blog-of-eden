@@ -1,11 +1,11 @@
 # 实习准备
 
 > [!TIP]
-> 预计在 `CC98`、`xhs`、`知乎`、`B 站`等四个平台广搜一些经验
+> 预计在 `CC98`、`xhs`、`知乎`、`B 站` 等四个平台广搜一些经验
 
-> [!CAUTION]- "具身红黑榜"
+> [!CAUTION] - "具身红黑榜"
 >
-> **具身红黑榜**：[具身大脑公司红黑榜（求职向） - 小红书](https://www.xiaohongshu.com/explore/6aa8182c0000000028032dd4?xsec_token=ABgdQ1V-jln_8RnyKL23nlsgIYrSpxs0tVvY9lPsLLfi8=&xsec_source=pc_search&source=web_explore_feed) 
+> **具身红黑榜**：[具身大脑公司红黑榜（求职向） - 小红书](https://www.xiaohongshu.com/explore/6aa8182c0000000028032dd4?xsec_token=ABgdQ1V-jln_8RnyKL23nlsgIYrSpxs0tVvY9lPsLLfi8=&xsec_source=pc_search&source=web_explore_feed)  
 
 ## CC98 前人经验分享
 
@@ -16,6 +16,15 @@
 - ~~【实习兼职】找实习记录（小小经验分享） https://www.cc98.org/topic/6327259 复制本链接到浏览器或者打开【CC98】微信小程序查看~~~
 - **（机器人公司相关的哦）**【求职广场】**[零经验] 如何寻找第一段实习** https://www.cc98.org/topic/6431302 复制本链接到浏览器或者打开【CC98】微信小程序查看~
 - 【学习天地】开源之夏个人经验分享 tag: 科研 实习 CS 计算机 https://www.cc98.org/topic/6338492 复制本链接到浏览器或者打开【CC98】微信小程序查看~
+- **投递的各个渠道的区别** 【实习兼职】日常实习简历投递求助万能 8u https://www.cc98.org/topic/6385154 复制本链接到浏览器或者打开【CC98】微信小程序查看~
+- **投简历的时间** 【求职广场】大三下想有一段日常实习，什么时候投简历合适？ https://www.cc98.org/topic/6374518 复制本链接到浏览器或者打开【CC98】微信小程序查看~
+
+**实习简历怎么写**
+
+- 【校园信息】实习简历包装 https://www.cc98.org/topic/6462886 复制本链接到浏览器或者打开【CC98】微信小程序查看~
+- 【科研学术】想投暑期实习发现简历无从下笔 https://www.cc98.org/topic/6435716 复制本链接到浏览器或者打开【CC98】微信小程序查看~
+- 【求职广场】大模型算法岗 如何在实习中扩充自己的简历 https://www.cc98.org/topic/6422727 复制本链接到浏览器或者打开【CC98】微信小程序查看~
+- 【实习兼职】lz 计算机视觉研一，实习简历如何攥写 https://www.cc98.org/topic/6355545 复制本链接到浏览器或者打开【CC98】微信小程序查看~
 
 **第一次找实习/无相关经历找实习的难度等**
 
@@ -35,11 +44,19 @@
 
 ## xhs 上的一些人的帖子
 
+**第一份实习**
+
 - **研一想找 Agent 的实习，但只会基础 Python，文中有其他有用评论** [想问问大家 - 小红书](https://www.xiaohongshu.com/explore/6a7334c5000000003202012c?xsec_token=ABT1VxrbAe-_xpZCZrFSwxpl5TI5TyzvOpFugCTJp7ToY=&xsec_source=pc_search&source=web_explore_feed) 
 - **投递 Agent 岗的速通版** [Agent 开发三周实习速成路线 - 小红书搜索](https://www.xiaohongshu.com/search_result_ai?keyword=Agent%20%E5%BC%80%E5%8F%91%E4%B8%89%E5%91%A8%E5%AE%9E%E4%B9%A0%E9%80%9F%E6%88%90%E8%B7%AF%E7%BA%BF&source=web_explore_feed) 
--  [研0找算法实习经验分享 - 小红书 ](https://www.xiaohongshu.com/explore/6ab7b3e7000000001a021146?xsec_token=AB0TQaNHv7nM-wHINI-ELAeW9S_UgxHdedymkpj_4UTpU=&xsec_source=pc_search&source=web_explore_feed) 
+-  [研 0 找算法实习经验分享 - 小红书 ](https://www.xiaohongshu.com/explore/6ab7b3e7000000001a021146?xsec_token=AB0TQaNHv7nM-wHINI-ELAeW9S_UgxHdedymkpj_4UTpU=&xsec_source=pc_search&source=web_explore_feed) 
 - **第一段实习，想找 SLAM 岗，但只有毕设做的视觉里程计项目（后面这位 up 找到了）** [研一上想找段实习，投了许多没有一家回复 - 小红书](https://www.xiaohongshu.com/explore/6aaa59b8000000002a005c40?xsec_token=AB5glnjvvgGiSEu7GvxRzB_VWYrLhzOVTKNmV_3caeYl0=&xsec_source=pc_search&source=web_explore_feed) 
-- **机械从小白开始转具身** [机械转具身智能学习技术路线(三个offer版) - 小红书](https://www.xiaohongshu.com/explore/6a3fe612000000001602794e?xsec_token=ABoiou9nko-AYzOzeiM-4YlXMBxv5lSLGZArHepNtcFeQ=&xsec_source=pc_search&source=web_explore_feed)  
+- **机械从小白开始转具身** [机械转具身智能学习技术路线(三个 offer 版) - 小红书](https://www.xiaohongshu.com/explore/6a3fe612000000001602794e?xsec_token=ABoiou9nko-AYzOzeiM-4YlXMBxv5lSLGZArHepNtcFeQ=&xsec_source=pc_search&source=web_explore_feed)  
+
+**关于简历的制作方法**
+
+- **比较全面的各个方面简历该如何做** [大厂 HR 都喜欢的简历模板 - 小红书](https://www.xiaohongshu.com/explore/6a7dcae7000000002800b635?xsec_token=ABrry_AXevCUtns4iNt74Kqbs2ERQjDdOQNmlHTv9ercU=&xsec_source=pc_search&source=web_explore_feed)  
+- **一些写简历的注意事项** [给找第一段大厂实习的同学一点建议 2️⃣ - 小红书](https://www.xiaohongshu.com/explore/696dabf6000000001a02b4d1?xsec_token=ABjLTd2B-C9TTiMscrDZdbyE1Iago7-aKsmDbKIzsrHAs=&xsec_source=pc_search&source=web_explore_feed)  
+- **内容撰写规则** [为什么这种排版的简历，HR 会多看 3 分钟 - 小红书](https://www.xiaohongshu.com/explore/6a4e4c54000000000f033c0f?xsec_token=ABzKRvEmP_U12dB893wQmbvfeHBs6EdNuOV--r7aYmTwQ=&xsec_source=pc_search&source=web_explore_feed) 
 
 一份具身的学习贴 [《具身智能从入门到实践》系统学习路线 - 小红书](https://www.xiaohongshu.com/explore/6a86c2c300000000330133a5?xsec_token=ABNdVZasEsrNL8QukTsu2SRzUwR3wPruJ7RIH50eq9jFk=&xsec_source=pc_search&source=web_explore_feed)  
 
